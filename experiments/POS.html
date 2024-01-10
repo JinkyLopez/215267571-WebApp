@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+  </head>
+  
+  <div class="pos-container">
+      <div class="nlogo">
+      <img src="imgs/namelogo.png" alt="logo" width="500px">
+      </div>
+    <table>
+      <tr>
+        <th id="product">Product</th>
+        <th>Unit</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Quantity</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td class="product-name">All Purpose Flour</td>
+        <td>1kg</td>
+        <td class="product-price">₱70.00</td>
+        <td class="stock">0</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <td class="product-name">Cake Flour</td>
+      <td>1kg</td>
+      <td class="product-price">₱60.00</td>
+      <td class="stock">50</td>
+      <td><input type="number" class="quantity" min="0"></td>
+      <td><button class="add-to-cart">Add</button></td>
+      <tr>
+        <td class="product-name">Self-Rising Flour</td>
+        <td>1kg</td>
+        <td class="product-price">₱116.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Baking Soda</td>
+        <td>500g</td>
+        <td class="product-price">₱42.50</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Baking Powder</td>
+        <td>500g</td>
+        <td class="product-price">₱77.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Cocoa Powder</td>
+        <td>1kg</td>
+        <td class="product-price">₱115.25</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Yeast</td>
+        <td>500g</td>
+        <td class="product-price">₱140.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">White Sugar</td>
+        <td>1kg</td>
+        <td class="product-price">₱125.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Brown Sugar</td>
+        <td>1kg</td>
+        <td class="product-price">₱100.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+      <tr>
+        <td class="product-name">Confectioners Sugar</td>
+        <td>500g</td>
+        <td class="product-price">₱96.00</td>
+        <td class="stock">30</td>
+        <td><input type="number" class="quantity" min="0"></td>
+        <td><button class="add-to-cart">Add</button></td>
+      </tr>
+
+    </table>
+    
+    <div class="receipt">
+      <h2>RECEIPT</h2>
+      <ul id="receipt-list"></ul>
+      <hr>
+      <p>Total: <span id="total-amount">₱0.00</span></p>
+    </div>
+
+
+    <div class="cr">
+        <button id="checkout">CHECKOUT</button>
+         <button id="restock">RESTOCK</button>
+
+    </div>
+
+    <div class="log">
+      <button id="logout" class = "logout-btn">Log Out</button>
+    </div>
+
+  </div>
+
+   <script src="logout.js"></script>
+
+</html>
