@@ -1,0 +1,164 @@
+body {
+    background-image: linear-gradient(rgba(48, 48, 57, 0.8), rgba(48, 48, 57, 0.8)), url(background.jpg);
+    background-size: cover;
+    font-family: Arial, 'Verdana', Helvetica, Sans-serif;
+}
+
+
+h1 {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+}
+
+.nlogo {
+    margin-left: 280px;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: beige;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.input-group {
+    background: #dddada;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+}
+
+.input-group i{
+    margin-left: 15px;
+    color: rgb(129, 47, 47);
+}
+
+.pos-container {
+    max-width: 1000px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 5);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0aab6;
+    margin-top: 30px;
+}
+
+.pos-container h1 {
+    margin-top: 5%;
+    text-align: center;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+}
+
+table input{
+    background: rgb(245, 245, 229);
+    height: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+input[type="number"] {
+    width: 50px;
+    font-family: Arial, 'Verdana', Helvetica, Sans-serif;
+    font-size: medium;
+}
+
+button {
+    background-color: whitesmoke;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #b30068;
+    color: white;
+}
+
+.cr {
+    margin-left: 780px;
+}
+
+.log {
+    margin-left: 880px;
+}
+
+#logout, #checkout, #restock {
+    display: inline;
+    margin: 20px auto;
+    width: 100px;
+    height: 30px;
+}
+
+#logout {
+    background-color: #ed4b39;
+    color: white;
+}
+
+#logout:hover {
+    background-color: #e75e4f;
+    color: black;
+}
+
+#checkout {
+    background-color: #28a745;
+    color: white;
+}
+
+#checkout:hover{
+    background-color: #45b15e;
+    color: rgb(12, 12, 12);
+}
+
+#restock:hover {
+    background-color: hotpink;
+}
+
+.receipt {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#receipt-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#receipt-list li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#total-amount {
+    font-weight: bold;
+}
