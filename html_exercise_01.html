@@ -6,108 +6,167 @@
   <title>HTML Exercises-LOPEZ</title>
 </head>
 
-<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding: 5px">
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 5px">
 
-  <header style="text-align: center; font-family: 'Courier New', Courier, monospace;">
-    <h4>These are the first HTML Exercises in CC14 | WEB APPLICATION DEVELOPMENT.</h4>
-  </header>
+  <section id="header">
+    <header style="text-align: center; font-family: 'Courier New', Courier, monospace;">
+      <h4>These are the first HTML Exercises in CC14 | WEB APPLICATION DEVELOPMENT.</h4>
+    </header>
+  </section>
+  
+  <section id="link container">
+    <!-- Links -->
+    <section id="link title">
+      <h3>Putting Links/Navigation Buttons</h3>
+    </section>
 
-  <!-- Links -->
-  <h3>Putting Links/Navigation Buttons</h3>
-  <nav style="text-align: center;">
-    <a href="#" style="display: inline-block; padding: 15px;">Home</a>
-    <a href="#" style="display: inline-block; padding: 15px;">About Us</a>
-    <a href="#" style="display: inline-block; padding: 15px;">Contact</a>
-  </nav>
-
-  <hr>
-
-  <section>
-      <!-- Images -->
-    <h3>Inserting an Image</h3>
-    <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg" 
-      alt="Juan Luna's Winning Piece in Paris Exposition 1889" 
-      width="1000" height="500"
-      title="Juan Luna's masterwork “Hymen, oh Hyménée!"
-      style="float:inline-start; margin-left: 160px; margin-right: 160px; margin-bottom: 30px;"> <br>
+    <section id="nav buttons">
+      <nav style="text-align: center;">
+        <a href="#" style="display: inline-block; padding: 15px;">Home</a>
+        <a href="#" style="display: inline-block; padding: 15px;">About Us</a>
+        <a href="#" style="display: inline-block; padding: 15px;">Contact</a>
+      </nav>
+    </section>
   </section>
 
   <hr>
 
-  <!-- Forms -->
-  <h3>Using Forms</h3>
-  <form>
+  <section id="images container">
+      <!-- Images -->
+      <section id="images title">
+        <h3>Inserting an Image</h3>
+      </section>
 
-    <label for="username">Username: 
-      <input type="text" id="username" name="username" required><br><br>
-    </label>
+      <section id="image">
+        <figure>
+          <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg" 
+            alt="Juan Luna's Winning Piece in Paris Exposition 1889" 
+            width="1000" height="500"
+            title="Juan Luna's masterwork 'Hymen, oh Hyménée!'"
+            style="float:inline-start; margin-left: 160px; margin-right: 160px; margin-bottom: 30px;">
+          <figcaption style="text-align: center;">This is the 'Hymen, oh Hyménée!' of Juan Luna that won him the gold medal in Paris Exposition in 1889.</figcaption>
+        </figure>
+      </section>
+  </section>
 
-    <label for="password">Password: 
-      <input type="password" id="password" name="Password" required><br><br>
-    </label>
+  <br><hr>
 
-    <label>
-      <input type="radio" name="gender" value="male">
-      Male
-    </label>
+  <section id="forms container">
+    <!-- Forms -->
+    <section id="forms title">
+      <h3>Using Forms</h3>
+    </section>
 
-    <label>
-      <input type="radio" name="gender" value="female">
-      Female
-    </label><br><br>
+    <form>
 
-    <label>
-      <input type="checkbox" name="TermAndCon" required>
-      Agree to Terms and Conditions
-    </label>
+      <section id="username container">
+       <label for="username">Username: 
+          <input type="text" id="username" name="username" required pattern="[01-2345-Abcde]+" minlength="10">
+       </label>
+      </section>
+    
+      <section id="password container">
+        <label for="password">Password: 
+          <input type="password" id="password" name="Password" required minlength="8"><br><br>
+        </label>
+      </section>
+    
+      <section id="male container">
+        <label>
+          <input type="radio" name="gender" value="male">
+          Male
+        </label>
+      </section>
+      
+      <section id="female container">
+        <label>
+          <input type="radio" name="gender" value="female">
+          Female
+        </label>
+      </section>
+      
+      <br>
 
-    <br><br><br><input type="submit" value="Submit" style="font-weight: bold;">
-  </form><br>
+      <section id="terms container">
+        <label>
+          <input type="checkbox" name="TermAndCon" required>
+          Agree to Terms and Conditions
+        </label>
+      </section>
 
-  <hr>
+      <br><br>
 
-  <!-- Tables -->
-  <h3>Creating Tables</h3>
-  <table style="width: 50%; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="border: 1px solid black; padding: 8px;">Name</th>
-        <th style="border: 1px solid black; padding: 8px;">Age</th>
-        <th style="border: 1px solid black; padding: 8px;">City</th>
-      </tr>
-    </thead>
+      <section id="submit container">
+        <input type="submit" value="Submit" style="font-weight: bold;">
+      </section>
+    
+    </form>
+  </section>
 
-    <tbody>
-      <tr>
-        <td style="border: 1px solid black; padding: 8px;">John</td>
-        <td style="border: 1px solid black; padding: 8px;">25</td>
-        <td style="border: 1px solid black; padding: 8px;">New York</td>
-      </tr>
+  <br><hr>
 
-      <tr>
-        <td style="border: 1px solid black; padding: 8px;">Jane</td>
-        <td style="border: 1px solid black; padding: 8px;">30</td>
-        <td style="border: 1px solid black; padding: 8px;">Los Angeles</td>
-      </tr>
-    </tbody>
-  </table><br><br>
+  <section id="table container">
+    <!-- Tables -->
+    <section id="table title">
+      <h3>Creating Tables</h3>
+    </section>
 
-  <hr>
+    <section id="table">
+      <table style="width: 50%; border-collapse: collapse; margin: 20px auto">
+        <thead>
+          <tr>
+            <th style="border: 1px solid black; padding: 8px;">Name</th>
+            <th style="border: 1px solid black; padding: 8px;">Age</th>
+            <th style="border: 1px solid black; padding: 8px;">City</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black; padding: 8px;">John</td>
+            <td style="border: 1px solid black; padding: 8px;">25</td>
+            <td style="border: 1px solid black; padding: 8px;">New York</td>
+          </tr>
+  
+          <tr>
+            <td style="border: 1px solid black; padding: 8px;">Jane</td>
+            <td style="border: 1px solid black; padding: 8px;">30</td>
+            <td style="border: 1px solid black; padding: 8px;">Los Angeles</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
 
-  <!-- Audio and Video -->
-  <h3>Inserting Audio and Video</h3>
-    <audio 
-      controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
-      src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
-    </audio><br><br><br>
+  <br><br><hr>
 
-    <video controls title="Yeah, you got Rick Rolled!" width="640"
-      src="https://redirector.googlevideo.com/videoplayback?expire=1705954031&ei=j3auZffKIf-isfIPrp2xyAU&ip=107.161.26.200&id=o-ADhctpQ0V54mQp6Rbv-L0tf_j1Ucf5Orf6doUOXX7sUx&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Zq&mm=31%2C26&mn=sn-nx57ynss%2Csn-qxoednee&ms=au%2Conr&mv=u&mvi=2&pl=25&siu=1&spc=UWF9fyU5AhsgK_QuRaSx0UZ5QUZY6txjsUHRORNNbAUDXMK13Q&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=8.173&lmt=1630726785474116&mt=1705932048&fvip=5&fexp=24007246&c=ANDROID&txp=5311224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIgCesxRjZfjerC5YA3eYBF29o9WsjCZP_wiEz-L2OkYucCIQCNWjn2XcZb8tJ6Uo9wdktlRO_xJ73AZ7QGTJtRIBynfA%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl&lsig=AAO5W4owRAIgedt233OZzre3FFjS15MPusfraysMH9Y6-q6QlfiQfLUCIBpjsXBOrg4iH17rwYqK7OkYgAHo-skiijeqjyHF_mNu&title=Rick+roll+video+disguised">
-    </video>
+  <section id="audio video container" style=" text-align:center">
+    <!-- Audio and Video -->
+    <section id="audio video title" style=" text-align: left;">
+      <h3>Inserting Audio and Video</h3>
+    </section>
 
-    <footer style="text-align: center; padding: 10px; font-family: 'Courier New', Courier, monospace;">
-      <p>All rights reserved.</p>
-    </footer>
+    <section id="audio">
+      <audio 
+        controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
+        src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
+      </audio>
+    </section>
+
+    <br><br><br>
+
+    <section id="video">
+      <video controls title="Mr. Bean Intro" width="640"
+        src="Mr_Bean_Intro.mp4">
+      </video>
+    </section>
+  </section>
+
+    <section id="footer container">
+      <footer style="text-align: center; padding: 10px; font-family: 'Courier New', Courier, monospace;">
+        <p>All rights reserved.</p>
+      </footer>
+    </section>
   
 </body>
 
