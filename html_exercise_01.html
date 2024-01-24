@@ -14,160 +14,128 @@
     </header>
   </section>
   
-  <section id="link_container">
-    <!-- Links -->
-    <section id="link_title">
-      <h3>Putting Links/Navigation Buttons</h3>
-    </section>
-
-    <section id="nav_buttons">
-      <nav style="text-align: center;">
-        <a href="#" style="display: inline-block; padding: 15px;">Home</a>
-        <a href="#" style="display: inline-block; padding: 15px;">About Us</a>
-        <a href="#" style="display: inline-block; padding: 15px;">Contact</a>
-      </nav>
-    </section>
+  <!-- Links -->
+  <section id="link_title">
+    <h3>Putting Links/Navigation Buttons</h3>
   </section>
+
+  <nav id="nav_buttons" style="text-align: center;">
+    <a href="#" style="display: inline-block; padding: 15px;">Home</a>
+    <a href="#" style="display: inline-block; padding: 15px;">About Us</a>
+    <a href="#" style="display: inline-block; padding: 15px;">Contact</a>
+  </nav>
 
   <hr>
 
-  <section id="images_container">
-      <!-- Images -->
-      <section id="images_title">
-        <h3>Inserting an Image</h3>
-      </section>
-
-      <section id="image">
-        <figure>
-          <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg" 
-            alt="Juan Luna's Winning Piece in Paris Exposition 1889" 
-            width="1000" height="500"
-            title="Juan Luna's masterwork 'Hymen, oh Hyménée!'"
-            style="float:inline-start; margin-left: 160px; margin-right: 160px; margin-bottom: 30px;">
-          <figcaption style="text-align: center;">This is the 'Hymen, oh Hyménée!' of Juan Luna that won him the gold medal in Paris Exposition in 1889.</figcaption>
-        </figure>
-      </section>
+  <!-- Images -->
+  <section id="images_title">
+    <h3>Inserting an Image</h3>
   </section>
+
+  <figure id="image">
+    <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg" 
+      alt="Juan Luna's Winning Piece in Paris Exposition 1889" 
+      width="1000" height="500"
+      title="Juan Luna's masterwork 'Hymen, oh Hyménée!'"
+      style="float:inline-start; margin-left: 160px; margin-right: 160px; margin-bottom: 30px;">
+    <figcaption style="text-align: center;">This is the 'Hymen, oh Hyménée!' of Juan Luna that won him the gold medal in Paris Exposition in 1889.</figcaption>
+  </figure>
 
   <br><hr>
 
-  <section id="forms_container">
-    <!-- Forms -->
-    <section id="forms_title">
-      <h3>Using Forms</h3>
-    </section>
-
-    <form>
-
-      <section id="username_container">
-       <label for="username">Username: 
-          <input type="text" id="username" name="username" required pattern="[01-2345-Abcde]+" minlength="10">
-       </label>
-      </section>
-    
-      <section id="password_container">
-        <label for="password">Password: 
-          <input type="password" id="password" name="Password" required minlength="8"><br><br>
-        </label>
-      </section>
-    
-      <section id="male_container">
-        <label>
-          <input type="radio" name="gender" value="male">
-          Male
-        </label>
-      </section>
-      
-      <section id="female_container">
-        <label>
-          <input type="radio" name="gender" value="female">
-          Female
-        </label>
-      </section>
-      
-      <br>
-
-      <section id="terms_container">
-        <label>
-          <input type="checkbox" name="TermAndCon" required>
-          Agree to Terms and Conditions
-        </label>
-      </section>
-
-      <br><br>
-
-      <section id="submit_container">
-        <input type="submit" value="Submit" style="font-weight: bold;">
-      </section>
-    
-    </form>
+  <!-- Forms -->
+  <section id="forms_title">
+    <h3>Using Forms</h3>
   </section>
+
+  <form>
+
+    <label id="username_container" for="username">Username: 
+      <input type="text" id="username" name="username" required pattern="[01-2345-Abcde]+" minlength="10">
+    </label>
+  
+    <label id="password_container" for="password">Password: 
+      <input type="password" id="password" name="Password" required minlength="8"><br><br>
+    </label>
+
+    <label id="male_container">
+      <input type="radio" name="gender" value="male">
+      Male
+    </label>
+
+    <label id="female_container">
+      <input type="radio" name="gender" value="female">
+      Female
+    </label>
+  
+    <br>
+
+    <label id="terms_container">
+      <input type="checkbox" name="TermAndCon" required>
+      Agree to Terms and Conditions
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Submit" id="submit_container" style="font-weight: bold;">
+  
+  </form>
 
   <br><hr>
 
-  <section id="table_container">
-    <!-- Tables -->
-    <section id="table_title">
-      <h3>Creating Tables</h3>
-    </section>
-
-    <section id="table">
-      <table style="width: 50%; border-collapse: collapse; margin: 20px auto">
-        <thead>
-          <tr>
-            <th style="border: 1px solid black; padding: 8px;">Name</th>
-            <th style="border: 1px solid black; padding: 8px;">Age</th>
-            <th style="border: 1px solid black; padding: 8px;">City</th>
-          </tr>
-        </thead>
-  
-        <tbody>
-          <tr>
-            <td style="border: 1px solid black; padding: 8px;">John</td>
-            <td style="border: 1px solid black; padding: 8px;">25</td>
-            <td style="border: 1px solid black; padding: 8px;">New York</td>
-          </tr>
-  
-          <tr>
-            <td style="border: 1px solid black; padding: 8px;">Jane</td>
-            <td style="border: 1px solid black; padding: 8px;">30</td>
-            <td style="border: 1px solid black; padding: 8px;">Los Angeles</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <!-- Tables -->
+  <section id="table_title">
+    <h3>Creating Tables</h3>
   </section>
+
+  <table style="width: 50%; border-collapse: collapse; margin: 20px auto">
+    <thead>
+      <tr>
+        <th style="border: 1px solid black; padding: 8px;">Name</th>
+        <th style="border: 1px solid black; padding: 8px;">Age</th>
+        <th style="border: 1px solid black; padding: 8px;">City</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style="border: 1px solid black; padding: 8px;">John</td>
+        <td style="border: 1px solid black; padding: 8px;">25</td>
+        <td style="border: 1px solid black; padding: 8px;">New York</td>
+      </tr>
+
+      <tr>
+        <td style="border: 1px solid black; padding: 8px;">Jane</td>
+        <td style="border: 1px solid black; padding: 8px;">30</td>
+        <td style="border: 1px solid black; padding: 8px;">Los Angeles</td>
+      </tr>
+    </tbody>
+  </table>
 
   <br><br><hr>
 
-  <section id="audio_video_container" style=" text-align:center">
-    <!-- Audio and Video -->
-    <section id="audio_video_title" style=" text-align: left;">
-      <h3>Inserting Audio and Video</h3>
-    </section>
-
-    <section>
-      <audio 
-        controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
-        src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
-      </audio>
-    </section>
-
-    <br><br><br>
-
-    <section>
-      <video controls title="Mr. Bean Intro" width="640"
-        src="Mr_Bean_Intro.mp4">
-      </video>
-    </section>
+  <!-- Audio and Video -->
+  <section id="audio_video_title" style=" text-align: left;">
+    <h3>Inserting Audio and Video</h3>
   </section>
 
-    <section>
-      <footer style="text-align: center; padding: 10px; font-family: 'Courier New', Courier, monospace;">
-        <p>All rights reserved.</p>
-      </footer>
-    </section>
-  
+  <audio 
+    controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
+    src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3"
+    style=" text-align:center">
+  </audio>
+
+  <br><br><br>
+
+  <video controls title="Mr. Bean Intro" width="640"
+    src="Mr_Bean_Intro.mp4"
+    style=" text-align:center">
+  </video>
+
+  <footer style="text-align: center; padding: 10px; font-family: 'Courier New', Courier, monospace;">
+    <p>All rights reserved.</p>
+  </footer>
+
 </body>
 
 </html>
