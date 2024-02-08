@@ -1,19 +1,23 @@
     
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: auto;
+    }
+
+    #everything{
+        margin: 20px;
     }
 
     header{
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-        color:rgba(9, 6, 6, 0.829);
+        color:rgba(255, 255, 255, 0.829);
+        background-color: black;
+        padding: 1px;
     }
 
-    nav{
-        text-align: center;
+    abbr{
+        text-decoration: none;
     }
 
     nav a{
@@ -21,37 +25,92 @@
         display: inline-block;
         padding: 10px;
         margin: 5px;
-        background-color: rgb(136, 64, 204);
-        color:white;
-        border-radius: 5px;
+        background-color: black;
+        color:rgba(255, 255, 255, 0.829);
+        border-radius: 10px;
         transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-        background-color: rgb(108, 51, 162);
+        background-color: rgb(44, 44, 44);
     }
 
-    figure image{
+    img{
         float: inline-start;
-        margin-left: 160px; margin-right: 100px; margin-bottom: 30px;
+        max-width: 100%;
+        height: auto;
+        padding:10px
     }
 
     figcaption{
         text-align: center;
     }
 
+    .user_pw{
+        padding: 9px;
+        width: 100%;
+        box-sizing: border-box;
+        border:none;
+        border-bottom: 2px solid rgb(93, 93, 93);
+    }
+
+    #username_container, #password_container{
+        text-align: left;
+    }
+
     form{
+        margin: 0 auto;
+        width: 300px;
+        padding:15px;
+        border: 2px solid black;
+        border-radius: 20px;
+        color: black;
+    }
+
+    form>h3{
         text-align: center;
     }
 
-    form label{
+    #male_container, #female_container{
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin-right: 4px;
+        outline: none;
+    }
+    
+    input[type="radio"]:checked {
+        background-color: black;
+        border-color: rgb(195, 194, 194);
     }
 
     #submit_container{
         font-weight: bold;
+        text-align: center;
+        color:rgba(255, 255, 255, 0.829);
+        background-color: black;
+        padding: 10px 20px; 
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        width: 100%;
     }
+
+    #submit_container:hover{
+        background-color: rgb(44, 44, 44);
+    }
+
     table{
         width: 50%; border-collapse: collapse; margin: 20px auto
     }
@@ -67,7 +126,10 @@
       }
 
       footer{
-        text-align: center;
-        padding: 10px;
+        padding: 5px;
         font-family: 'Courier New', Courier, monospace;
+        font-size: smaller;
+        text-align: center;
+        color:rgba(255, 255, 255, 0.829);
+        background-color: black;
       }
