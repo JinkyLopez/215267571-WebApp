@@ -14,18 +14,17 @@
     <header>
       <h4><abbr title="HyperText Markup Language">HTML</abbr> Exercises in
         <abbr title="Web Application Development">CC14</abbr></h4>
+
+      <!-- Links -->
+      <nav id="nav_buttons">
+        <a href="#header">Home</a>
+        <a href="#About_Us">About Us</a>
+        <a href="#Contact">Contact Us</a>
+      </nav>
     </header>
   </section>
   
   <section id="everything">
-    <!-- Links -->
-    <nav id="nav_buttons">
-      <a href="#header">HOME</a>
-      <a href="#About_Us">About Us</a>
-      <a href="#Contact">Contact Us</a>
-    </nav>
-
-    <hr>
 
     <!-- Images -->
     <section id="images_title">
@@ -47,16 +46,16 @@
       <h3>Using Forms</h3>
     </section>
 
-    <form>
+    <form id="login_form" onsubmit="authenticate(event)">
 
-      <h3>Login</h3>
+      <h3 id="login_header">Login</h3>
 
       <label id="username_container" for="username">Username <br>
-      <input class="user_pw" type="text" id="username" name="username" required pattern="[01-2345-Abcde]+" minlength="10" placeholder="Type your username here">
-    </label><br><br>
+      <input class="user_pw" type="text" id="username" name="username" required pattern="[0-9A-z]+" minlength="10" placeholder="Type your username here">
+      </label><br><br>
 
       <label id="password_container" for="password">Password <br>
-      <input class="user_pw" type="password" name="Password" required minlength="8" placeholder="Type your password here">
+      <input class="user_pw" type="password" id="password" name="password" required minlength="8" placeholder="Type your password here">
       </label><br><br>
 
       <label id="male_container" class="radio">
@@ -72,13 +71,13 @@
       <br>
 
       <label id="terms_container">
-        <input type="checkbox" name="TermAndCon" required>
+        <input type="checkbox" name="TermAndCon" id="terms" required>
         Agree to Terms and Conditions
       </label>
 
       <br><br>
 
-      <input type="submit" value="Submit" id="submit_container">
+      <input type="submit" value="Submit" id="submit_container" onclick="authenticate(event)">
     
     </form>
 
@@ -161,6 +160,6 @@
     <p>Copyright 2024. All rights reserved.</p>
   </footer>
 
+  <script src="html_exercises_01-script.js"></script>
 </body>
-
 </html>

@@ -15,6 +15,10 @@
         background-color: black;
         padding: 1px;
     }
+    header>h4{
+        font-size: 33px;
+        margin-bottom: 2%;
+    }
 
     abbr{
         text-decoration: none;
@@ -23,27 +27,32 @@
     nav a{
         text-decoration: none;
         display: inline-block;
-        padding: 10px;
-        margin: 5px;
-        background-color: black;
+        margin-bottom: 5px;
         color:rgba(255, 255, 255, 0.829);
-        border-radius: 10px;
         transition: background-color 0.3s ease;
+        padding: 10px;
+        border-right: 1px solid white;
     }
 
+
+    #nav_buttons a:last-child {
+        border-right: none;
+      }
+
     nav a:hover {
-        background-color: rgb(44, 44, 44);
+        color:rgb(255, 255, 255)
     }
 
     img{
         float: inline-start;
         max-width: 100%;
         height: auto;
-        padding:10px
+        margin-bottom: 10px;
     }
 
     figcaption{
-        text-align: center;
+        text-align: justify;
+        font-size: small;
     }
 
     .user_pw{
@@ -109,7 +118,7 @@
 
     #submit_container:hover{
         background-color: rgb(44, 44, 44);
-    }
+    }   
 
     table{
         width: 50%; border-collapse: collapse; margin: 20px auto
@@ -125,7 +134,11 @@
         display: block;
       }
 
-      footer{
+    p{
+        font-size: small;
+    }
+
+    footer{
         padding: 5px;
         font-family: 'Courier New', Courier, monospace;
         font-size: smaller;
