@@ -1,5 +1,4 @@
-    
-    body{
+    body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: auto;
     }
@@ -8,9 +7,17 @@
         margin: 20px;
     }
 
-    header{
+    header {
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
+<<<<<<< HEAD
+        text-decoration: none;
+        color: rgba(9, 6, 6, 0.829);
+    }
+
+    nav {
+        text-align: center;
+=======
         color:rgba(255, 255, 255, 0.829);
         background-color: black;
     }
@@ -22,13 +29,22 @@
 
     abbr{
         text-decoration: none;
+>>>>>>> f734fc963de090be73ffad2092b46c77c90629cd
     }
 
-    nav a{
+    nav a {
         text-decoration: none;
         display: inline-block;
+<<<<<<< HEAD
+        padding: 10px;
+        margin: 5px;
+        background-color: rgb(136, 64, 204);
+        color: white;
+        border-radius: 5px;
+=======
         margin-bottom: 5px;
         color:rgba(255, 255, 255, 0.829);
+>>>>>>> f734fc963de090be73ffad2092b46c77c90629cd
         transition: background-color 0.3s ease;
         padding: 10px;
         border-right: 1px solid white;
@@ -43,6 +59,24 @@
         color:rgb(255, 255, 255)
     }
 
+<<<<<<< HEAD
+    figure image {
+        float: inline-start;
+        margin-left: 160px;
+        margin-right: 100px;
+        margin-bottom: 30px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    form label {
+=======
     img{
         float: inline-start;
         max-width: 100%;
@@ -81,6 +115,7 @@
     }
 
     #male_container, #female_container{
+>>>>>>> f734fc963de090be73ffad2092b46c77c90629cd
         display: block;
         margin-bottom: 1px;
         text-align: center;
@@ -103,7 +138,7 @@
         border-color: rgb(195, 194, 194);
     }
 
-    #submit_container{
+    #submit_container {
         font-weight: bold;
         text-align: center;
         color:rgba(255, 255, 255, 0.829);
@@ -116,24 +151,41 @@
         width: 100%;
     }
 
+<<<<<<< HEAD
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px auto
+=======
     #submit_container:hover{
         background-color: rgb(44, 44, 44);
     }   
 
     table{
         width: 50%; border-collapse: collapse; margin: 20px auto
+>>>>>>> f734fc963de090be73ffad2092b46c77c90629cd
     }
 
-    table th, table td{
-        border: 1px solid black; padding: 8px;
+    table th,
+    table td {
+        border: 1px solid black;
+        padding: 8px;
     }
 
-    audio, video {
+    audio,
+    video {
         text-align: center;
         margin: 0 auto;
         display: block;
-      }
+    }
 
+<<<<<<< HEAD
+    footer {
+        text-align: center;
+        padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+=======
     p{
         font-size: small;
     }
@@ -150,3 +202,4 @@
         color:rgba(255, 255, 255, 0.829);
         background-color: black;
       }
+>>>>>>> f734fc963de090be73ffad2092b46c77c90629cd

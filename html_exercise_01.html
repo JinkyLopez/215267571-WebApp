@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,6 +15,13 @@
       <h4><abbr title="HyperText Markup Language">HTML</abbr> Exercises in
         <abbr title="Web Application Development">CC14</abbr>
       </h4>
+    </header><br>
+  </section>
+
+  <!-- Links -->
+  <section id="link_title">
+    <h3>Putting Links/Navigation Buttons</h3>
+  </section>
 
       <!-- Links -->
       <nav id="nav_buttons">
@@ -42,12 +48,16 @@
 
     <hr>
 
-    <!-- Forms -->
-    <section id="forms_title">
-      <h3>Using Forms</h3>
-    </section>
+  <figure id="image">
+    <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg"
+      alt="Juan Luna's Winning Piece in Paris Exposition 1889" width="1000" height="500"
+      title="Juan Luna's masterwork 'Hymen, oh Hyménée!'">
+    <figcaption>This is the 'Hymen, oh Hyménée!' of Juan Luna that won him the gold medal in Paris Exposition in 1889.
+    </figcaption>
+  </figure>
 
-    <form id="login_form" onsubmit="authenticate(event)">
+  <br>
+  <hr>
 
       <h3 id="login_header">Login</h3>
 
@@ -56,22 +66,22 @@
           placeholder="Type your username here">
       </label><br><br>
 
-      <label id="password_container" for="password">Password <br>
-        <input class="user_pw" type="password" id="password" name="password" required minlength="8"
-          placeholder="Type your password here">
-      </label><br><br>
+    <label id="username_container" for="username">Username:
+      <input type="text" id="username" name="username" required pattern="[01-2345-Abcde]+" minlength="10">
+    </label>
 
       <label id="male_container" class="radio">
         <input type="radio" name="gender" value="male">
         Male
       </label>
 
-      <label id="female_container" class="radio">
-        <input type="radio" name="gender" value="female">
-        Female
-      </label>
+    <label for="email">Email:
+      <input type="email" name="email" required>
+    </label><br>
 
-      <br>
+    <label id="password_container" for="password">Password:
+      <input type="password" name="Password" required minlength="8"><br><br>
+    </label>
 
       <label id="terms_container">
         <input type="checkbox" name="TermAndCon" id="terms" required>
@@ -128,6 +138,11 @@
       src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
     </audio>
 
+    <label id="female_container">
+      <input type="radio" name="gender" value="female">
+      Female
+    </label>
+
     <br>
 
     <video controls title="Mr. Bean Intro" width="320" src="mr_bean.mp4">
@@ -145,28 +160,12 @@
           </iframe>
         </li>
 
-        <li>
-          <h5>Facebook</h5>
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUCjaguars&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
-        </li>
-      </ul>
-    </section>
+    <input type="submit" value="Submit" id="submit_container">
 
-    <br><br>
-    <hr>
-    <section id="About_Us">
-      <!-- About Us -->
-      <h3>About Us</h3>
-      <p>Welcome! This website showcases basic HTML contents!
-        Explore examples of image embedding, audio and video
-        integration, and the use of common HTML elements.
-        Dive into the world of web elements with us!
-      </p>
-    </section><br>
+  </form>
+
+  <br>
+  <hr>
 
     <section id="Contact">
       <!-- Contact -->
@@ -175,12 +174,71 @@
         Phone: (+639) 509-002-470
       </p>
 
-      <address>
-        <p>University of the Cordilleras, <br>
-          Governor Pack Road, Baguio City 2600
-        </p>
-      </address>
-    </section>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+
+      <tr>
+        <td>Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!-- Audio and Video -->
+  <section id="audio_video_title">
+    <h3>Inserting Audio and Video</h3>
+  </section>
+
+  <audio controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
+    src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
+  </audio>
+
+  <br>
+
+  <video controls title="Mr. Bean Intro" width="320" src="mr_bean.mp4">
+  </video>
+
+  <br><br>
+  <hr>
+  <section id="About_Us">
+    <!-- About Us -->
+    <h3>About Us</h3>
+    <p>Welcome! This website showcases various HTML wonders!
+      Explore examples of image embedding, audio and video
+      integration, and the use of basic HTML elements. See
+      how forms come to life and discover the simplicity and
+      versatility of HTML in creating engaging web content.
+      Dive into the world of web elements with us!</p>
+  </section><br>
+
+  <section id="Contact">
+    <!-- Contact -->
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:email@uc-bcf.edu.ph">email@uc-bcf.edu.ph</a><br>
+      Phone: (+639) 509-002-470</p>
+
+    <address>
+      <p>University of the Cordilleras, <br>
+        Governor Pack Road, Baguio City 2600
+      </p>
+    </address>
   </section>
 
   <!-- Adding footer -->
