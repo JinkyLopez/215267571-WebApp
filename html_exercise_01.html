@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Exercises-LOPEZ</title>
-  <link rel="stylesheet" href="html_exercises_01-styles.css">
+  <link rel="stylesheet" href="css/html_exercises_01-styles.css">
 </head>
 
 <body>
-  
+
   <!-- Add Header -->
   <section id="header" class="no-margin">
     <header>
       <h4><abbr title="HyperText Markup Language">HTML</abbr> Exercises in
-        <abbr title="Web Application Development">CC14</abbr></h4>
+        <abbr title="Web Application Development">CC14</abbr>
+      </h4>
 
       <!-- Links -->
       <nav id="nav_buttons">
@@ -23,7 +25,7 @@
       </nav>
     </header>
   </section>
-  
+
   <section id="everything">
 
     <!-- Images -->
@@ -32,10 +34,9 @@
     </section>
 
     <figure id="image">
-      <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg" 
-        alt="Juan Luna's Winning Piece in Paris Exposition 1889"
-        title="Juan Luna's masterwork 'Hymen, oh Hyménée!'">
-      <figcaption>The painting <cite>Hymen, oh Hyménée!</cite> of Juan Luna that made won him the 
+      <img src="https://vogue.ph/wp-content/uploads/2023/07/JuanLuna-071223-L.jpg"
+        alt="Juan Luna's Winning Piece in Paris Exposition 1889" title="Juan Luna's masterwork 'Hymen, oh Hyménée!'">
+      <figcaption>The painting <cite>Hymen, oh Hyménée!</cite> of Juan Luna that made won him the
         gold medal in the prestigious Paris Exposition in 1889.</figcaption>
     </figure>
 
@@ -51,11 +52,13 @@
       <h3 id="login_header">Login</h3>
 
       <label id="username_container" for="username">Username <br>
-      <input class="user_pw" type="text" id="username" name="username" required pattern="[0-9A-z]+" minlength="10" placeholder="Type your username here">
+        <input class="user_pw" type="text" id="username" name="username" required pattern="[0-9A-z]+" minlength="10"
+          placeholder="Type your username here">
       </label><br><br>
 
       <label id="password_container" for="password">Password <br>
-      <input class="user_pw" type="password" id="password" name="password" required minlength="8" placeholder="Type your password here">
+        <input class="user_pw" type="password" id="password" name="password" required minlength="8"
+          placeholder="Type your password here">
       </label><br><br>
 
       <label id="male_container" class="radio">
@@ -67,7 +70,7 @@
         <input type="radio" name="gender" value="female">
         Female
       </label>
-    
+
       <br>
 
       <label id="terms_container">
@@ -78,10 +81,11 @@
       <br><br>
 
       <input type="submit" value="Submit" id="submit_container" onclick="authenticate(event)">
-    
+
     </form>
 
-    <br><hr>
+    <br>
+    <hr>
 
     <!-- Tables -->
     <section id="table_title">
@@ -120,15 +124,13 @@
       <h3>Inserting Audio and Video</h3>
     </section>
 
-    <audio 
-      controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
+    <audio controls title="Love Grows (Where My Rosemary Goes)- Edison Lighthouse"
       src="https://ia804602.us.archive.org/4/items/edison-lighthouse/01%20-%20Love%20Grows%20%28Where%20My%20Rosemary%20Goes%29.mp3">
     </audio>
 
     <br>
 
-    <video controls title="Mr. Bean Intro" width="320"
-      src="mr_bean.mp4">
+    <video controls title="Mr. Bean Intro" width="320" src="mr_bean.mp4">
     </video>
 
     <!-- Adding Google Maps -->
@@ -137,40 +139,41 @@
       <ul>
         <li>
           <h5>Google Map</h5>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.316392382785!2d120.59780320000003!3d16.408750000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1426d6ff0fd%3A0xfe9ac4d43fc84157!2sUniversity%20of%20the%20Cordilleras!5e0!3m2!1sen!2sph!4v1707794692768!5m2!1sen!2sph" 
-            width="600" height="450" 
-            allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.316392382785!2d120.59780320000003!3d16.408750000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a1426d6ff0fd%3A0xfe9ac4d43fc84157!2sUniversity%20of%20the%20Cordilleras!5e0!3m2!1sen!2sph!4v1707794692768!5m2!1sen!2sph"
+            width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </li>
 
         <li>
           <h5>Facebook</h5>
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUCjaguars&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
-            width="340" height="500" 
-            style="border:none;overflow:hidden" 
-            scrolling="no" frameborder="0" allowfullscreen="true" 
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUCjaguars&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
           </iframe>
         </li>
       </ul>
     </section>
 
-    <br><br><hr>
+    <br><br>
+    <hr>
     <section id="About_Us">
       <!-- About Us -->
       <h3>About Us</h3>
       <p>Welcome! This website showcases basic HTML contents!
         Explore examples of image embedding, audio and video
         integration, and the use of common HTML elements.
-        Dive into the world of web elements with us!</p>
+        Dive into the world of web elements with us!
+      </p>
     </section><br>
 
     <section id="Contact">
       <!-- Contact -->
       <h3>Contact Us</h3>
       <p>Email: <a href="mailto:email@uc-bcf.edu.ph">email@uc-bcf.edu.ph</a><br>
-        Phone: (+639) 509-002-470</p>
+        Phone: (+639) 509-002-470
+      </p>
 
       <address>
         <p>University of the Cordilleras, <br>
@@ -185,6 +188,7 @@
     <p>Copyright 2024. All rights reserved.</p>
   </footer>
 
-  <script src="html_exercises_01-script.js"></script>
+  <script src="js/html_exercises_01-script.js"></script>
 </body>
+
 </html>
