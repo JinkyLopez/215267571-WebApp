@@ -40,19 +40,19 @@ h2 {
 }
 
 .img-div{
-    display: flex;
-    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
     background-color: white;
-    /*margin-left: 200px;
-    margin-right: 200px; */
-
+    border-radius: 20px;
 }
 
 img {
-    width: 60%;
-    height: auto;
-    margin-left: 2%;
+    width: 450px;
+    height: 450px;
     border-radius: 20px;
+    margin-left: -10px;
 }
 
 #headline {
@@ -69,11 +69,4 @@ ul {
 
 li {
     margin: 16px 0;
-}
-
-blockquote {
-    font-style: italic;
-    max-width: 545px;
-    margin: 0 auto 50px auto;
-    text-align: left;
 }
