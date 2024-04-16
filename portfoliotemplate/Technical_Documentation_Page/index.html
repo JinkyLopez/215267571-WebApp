@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML and CSS Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML and CSS</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li>
+                <a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+            <li>
+                <a href="#JavaScript_and_Java" class="nav-link">HTML Basics</a></li>
+            <li>
+                <a href="#Global_variables" class="nav-link">Media Elements in HTML</a></li>
+            <li><a href="#Hello_world" class="nav-link">CSS Basics</a></li>
+            <li><a href="#Variables" class="nav-link">Selectors in CSS</a></li>
+            <li>
+                <a href="#Declaring_variables" class="nav-link">Box Model in CSS</a></li>
+            <li><a href="#Variable_scope" class="nav-link">Flexbox in CSS</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are the fundamental technologies for building web pages. HTML provides the structure of the page, while CSS styles the elements within it.
+                </p>
+                <p>
+                    Here's a brief history of HTML and CSS:
+                    <br><br>
+                    <strong>HTML</strong>
+                    <ul id="history">
+                        <li>
+                            <b>1989-1990</b>: HTML was invented by Sir Tim Berners-Lee while working at CERN. The first version, HTML 1.0, was very basic and focused on structuring documents with simple tags like [head], [title], [body], and [h1] to [h6] for headings <i>("[]" should be replaced with "<>")</i>.
+                        </li>
+                        <li>
+                            <strong>1993-1994:</strong> HTML 2.0 was published as an Internet Engineering Task Force (IETF) RFC (Request for Comments) in 1995, introducing features like forms and tables.
+                        </li>
+                        <li>
+                            <strong>1995-1997:</strong> HTML 3.2 was released, adding support for features like image maps and text flow around images.
+                        </li>
+                        <li>
+                            <strong>1997-1999:</strong> HTML 4.0 and HTML 4.01 were released, bringing improved support for scripting and styling through the introduction of [script] and [style] elements.
+                        </li>
+                        <li>
+                            <strong>2000-2014:</strong> HTML underwent a period of stagnation, with no major updates until HTML5.
+                        </li>
+                        <li>
+                            <strong>2014:</strong> HTML5 was published as a W3C Recommendation, introducing many new features like semantic elements [header], [footer], [nav], etc., multimedia elements [video], [audio], and the Canvas API for drawing graphics.
+                        </li>
+                    </ul><br>
+                    
+                    <strong>CSS</strong>
+                    <ul id="history">
+                        <li>
+                            <strong>1994-1996:</strong> CSS was proposed by Håkon Wium Lie and Bert Bos at CERN, aiming to separate the presentation from the content of web pages.
+                        </li>
+                        <li>
+                            <strong>1996-1997:</strong> CSS1 was introduced as a W3C Recommendation in December 1996, providing basic styling capabilities like fonts, colors, and spacing.
+                        </li>
+                        <li>
+                            <strong>1998-1999:</strong> CSS2 was published as a W3C Recommendation in May 1998, adding support for positioning, media types, and more advanced styling features.
+                        </li>
+                        <li>
+                            <strong>2000-2010:</strong> CSS underwent various revisions and updates, but CSS2 remained the standard for many years.
+                        </li>
+                        <li>
+                            <strong>2011-2012:</strong> CSS3 modules started to be developed independently, allowing for more granular control over styling elements like borders, backgrounds, and animations.
+                        </li>
+                        <li>
+                            <strong>2014-present:</strong> CSS3 is still evolving, with new modules being added to extend the capabilities of CSS, including CSS Grid Layout and CSS Flexbox for layout, as well as CSS Variables and Custom Properties for dynamic styling.
+                        </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>A general understanding of how web pages work.</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>HTML Basics</header>
+            <article>
+                <p>
+                    HTML is the standard markup language for creating web pages. It defines the structure and content of a web page using a variety of tags and attributes.
+                </p>
+                
+                <p>
+                    In HTML, you use tags to define different elements such as headings, paragraphs, links, images, and more. Here's a simple example:
+                </p>
+                
+                <pre>
+                    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    &lt;div&gt;This is a separator or section for your codes.&lt;/div&gt;
+                </pre>
+                <p>You can check the other tags in the reference below.</p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Global_variables">
+            <header>Media Elements in HTML</header>
+            <article>
+                <p>
+                    Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                </p>
+                <pre>
+    1. Images (img):
+        The &lt;img&gt; element is used to embed images in a webpage.
+        Example:
+        &lt;img src="link to image" &gt;
+    
+    2. Links (a):
+        The &lt;a&gt; element is used to create hyperlinks to other webpages or resources.
+        Example:
+        &lt;a href="https://example.com"&gt; Name to the link &lt;/a&gt;
+    
+    3. Videos (video):
+        The &lt;video&gt; element is used to embed videos in a webpage.
+        Example:
+        &lt;video width="320" height="240" controls&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+            Your browser does not support the video tag.
+        &lt;/video&gt;
+    
+    4. Audio (audio):
+        The &lt;audio&gt; element is used to embed audio files in a webpage.
+        Example:
+        &lt;audio controls&gt;
+        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio tag.
+        &lt;/audio&gt;
+                    </pre>                    
+            </article>
+        </section>
+        
+        <section class="main-section" id="Hello_world">
+            <header>CSS Basics</header>
+            <article>
+                <p>
+                    CSS is a stylesheet language that controls the presentation of HTML elements on a web page. It allows you to style the layout, colors, fonts, and other visual aspects of your web page.
+                </p>
+
+                <p>
+                    CSS works by selecting HTML elements and applying styles to them. For example:
+                </p>
+
+                <pre>
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+
+    p {
+        line-height: 1.5:
+        text-align: center;
+    }
+                </pre>
+                <p>
+                    There are many other ways to "style" your HTML. If you'd like more, check the reference below.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Selectors in CSS</header>
+            <p>
+                Selectors are patterns used to select the elements you want to style in CSS. There are various types of selectors, including element selectors, class selectors, ID selectors, and more.
+            </p>
+            <pre>
+        /* Selecting elements by tag name */
+        p {
+            color: blue;
+        }
+
+        /* Selecting elements by class */
+        .intro {
+            font-size: 18px;
+        }
+
+        /* Selecting elements by ID */
+        #main-title {
+            text-align: center;
+        }
+
+        /* Selecting elements by attribute */
+        input[type="text"] {
+            border: 1px solid #ccc;
+        }
+
+        /* Selecting nested elements */
+        .container li {
+            list-style-type: circle;
+        }
+
+        /* Selecting elements based on their relationship */
+        .header + p {
+            margin-top: 20px;
+        }
+                </pre>
+
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header>Box Model in CSS</header>
+            <article>
+                <p>
+                    The box model is a fundamental concept in CSS that defines how elements are rendered on a web page. It consists of margin, border, padding, and content areas around each HTML element. Below are some examples:
+                </p>
+                <pre>
+    1. Content: Actual content of the element.
+    .box {
+        width: 200px;
+        height: 100px;
+    }
+    
+    2. Padding: Space between content and border.
+    .box {
+        padding: 20px;
+    }
+    
+    3. Border: Area surrounding padding and content.
+    .box {
+        border: 2px solid black;
+    }
+    
+    4. Margin: Space outside the border.
+    .box {
+        margin: 20px;
+    }
+                    </pre>
+                    
+            </article>
+        </section>
+
+        <section class="main-section" id="Variable_scope">
+            <header>Flexbox in CSS</header>
+            <article>
+                <p>
+                    Flexbox is a layout model in CSS that allows you to create flexible and efficient layouts. It simplifies the process of aligning and distributing space among items in a container, even when their size is unknown or dynamic.
+                </p>
+                <pre>
+    1. Flex Container Properties:
+        a. display: Defines a flex container.
+            Example:
+            .container {
+                display: flex;
+            }
+    
+        b. flex-direction: Specifies the direction of flex items.
+            Example:
+            .container {
+                flex-direction: row;
+            }
+    
+    2. Flex Item Properties:
+        a. flex-grow: Specifies how much a flex item will grow.
+            Example:
+            .item {
+                flex-grow: 1;
+            }
+    
+        b. flex-shrink: Specifies how much a flex item will shrink.
+            Example:
+            .item {
+                flex-shrink: 0;
+            }
+    
+    3. Alignment Properties:
+        a. justify-content: Aligns flex items along the main axis.
+            Example:
+            .container {
+                justify-content: center;
+            }
+    
+        b. align-items: Aligns flex items along the cross axis.
+            Example:
+            .container {
+                align-items: center;
+            }
+                    </pre>
+                    
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
+                        and
+                        <br><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Documentation</a>
+                    </li>
+                    <li>
+                        To learn more about HTMl and CSS, follow these pages:
+                        <br><a href="https://www.w3schools.com/html/">HTML Tutorial - W3Schools</a>
+                        <br><a href="https://www.w3schools.com/w3css/defaulT.asp">CSS Tutorial - W3Schools</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
